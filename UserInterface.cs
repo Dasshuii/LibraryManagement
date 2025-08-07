@@ -6,7 +6,7 @@ namespace TCSA.OOP.LibraryManagementSystem;
 
 internal class UserInterface
 {
-    private readonly BooksController _booksController = new();
+    private readonly BookController _bookController = new();
     private readonly MagazineController _magazineController = new();
     private readonly NewspaperController _newspaperController = new();
     internal void MainMenu()
@@ -47,7 +47,7 @@ internal class UserInterface
         switch (itemType)
         {
             case ItemType.Book:
-                _booksController.ViewItems();
+                _bookController.ViewItems();
                 break;
             case ItemType.Magazine:
                 _magazineController.ViewItems();
@@ -63,7 +63,7 @@ internal class UserInterface
         switch (itemType)
         {
             case ItemType.Book:
-                _booksController.AddItem();
+                _bookController.AddItem();
                 break;
             case ItemType.Magazine:
                 _magazineController.AddItem();
@@ -79,7 +79,7 @@ internal class UserInterface
         switch (itemType)
         {
             case ItemType.Book:
-                _booksController.DeleteItem();
+                _bookController.DeleteItem();
                 break;
             case ItemType.Magazine:
                 _magazineController.DeleteItem();

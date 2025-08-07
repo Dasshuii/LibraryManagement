@@ -3,7 +3,7 @@ using TCSA.OOP.LibraryManagementSystem.Models;
 
 namespace TCSA.OOP.LibraryManagementSystem.Controllers;
 
-internal class BooksController : IBaseController
+internal class BookController : BaseController, IBaseController
 {
     public void ViewItems()
     {
